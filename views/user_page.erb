@@ -1,0 +1,11 @@
+<h2><%= @title %></h2>
+
+<p>EMAIL: <%= @ind_user_hash[:email] %></p>
+<p>INTERESTS: <%= array_to_comma_sep_string(@ind_user_hash[:interests]) %></p>
+
+<h3>Other Users:</h3>
+<ul>
+  <% @other_users.each do |name| %>
+    <li><a href="/users/<%= name %>"><%= name %></a></li>
+  <% end %>
+</ul>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @title %></title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+  <div>
+    <%= yield %>
+  </div>
+  <footer>
+  <p>There are <%= @names.size %> users with a total of <%= count_interests(@user_hash) %> interests.</p>
+  </footer>
+  </body>
+</html>
